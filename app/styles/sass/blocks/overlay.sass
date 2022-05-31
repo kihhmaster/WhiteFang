@@ -1,0 +1,88 @@
+.overlay
+	position: absolute
+	right: 0
+	top: 0
+	width: 100%
+	height: 100vh
+	display: none
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	max-width: 312px
+	background: linear-gradient(191.68deg, #FFFFFF 39%, rgba(255, 255, 255, 0) 87.31%)
+	padding-top: 40px
+
+	padding-right: 30px
+.overlay__title
+	position: relative
+	width: 100%
+	padding-left: 53px
+	font-family: $userfont3
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 150%
+	color: #121212
+.overlay__clase
+	position: absolute
+	right: 53px
+	top: 45px
+.overlay__firstList
+	position: relative
+	width: 100%
+	margin-top: 20px
+	font-family: $userfont3
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 150%
+	color: #121212
+.overlay__firstLevel
+	position: relative
+	padding-left: 53px
+	width: 100%
+	height: 52px
+	display: flex
+	justify-content: flex-start
+	align-items: center
+.active
+	display: flex
+.overlay__secondList.active
+		display: flex
+.overlay__secondList
+	position: absolute
+	right: 280px
+	width: 100%
+	max-width: 205px
+	display: none
+	align-items: flex-start
+	justify-content: flex-start
+	flex-flow: column nowrap
+	top: 0
+	// background: #fff
+	font-family: $userfont3
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 150%
+	color: #121212
+.secondLevel
+	position: relative
+	width: 95%
+	height: 40px
+	padding-left: 36px
+	background: #fff
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	&:first-child
+		padding-top: 10px
+	&:last-child
+		padding-bottom: 10px
+.overlay__firstLevel
+	border-bottom: 2px solid #d9cb7e00
+	transition: all .7s
+	&:hover
+		border-bottom: 2px solid #D9CB7E
+
+
