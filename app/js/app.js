@@ -1,8 +1,82 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
-import { Swiper, Pagination, Scrollbar, Navigation, Controller, Autoplay } from 'swiper'
-Swiper.use([ Pagination, Scrollbar, Navigation, Controller, Autoplay ])
+import { Swiper, Pagination, Scrollbar, Navigation, Controller, Autoplay, Mousewheel, Parallax, EffectFade, EffectCoverflow} from 'swiper'
+Swiper.use([ Pagination, Scrollbar, Navigation, Controller, Autoplay, Mousewheel, Parallax, EffectFade, EffectCoverflow])
 document.addEventListener('DOMContentLoaded', () => {
+	const mainSlider = new Swiper(".main__slider", {
+		direction: "vertical",
+		loop: false,
+		speed: 1000,
+		parallax: true,
+		pagination: {
+			el: ".swiper-pagination",
+			type: 'fraction',
+			clickable: true,
+			paginationClickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		effect: 'fade',
+		fadeEffect: {
+			crossFade: true
+		},
+	});
+	const SliderText = new Swiper(".slider__text", {
+		direction: "vertical",
+		loop: false,
+		speed: 1500,
+		parallax: true,
+		reverseDirection: false,
+		pagination: {
+			el: ".swiper-pagination",
+			type: 'fraction',
+			clickable: true,
+			paginationClickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next--control',
+			prevEl: '.swiper-button-prev--control',
+		},
+		mousewheel: {
+			invert: false,
+		},
+		// effect: 'fade',
+		// fadeEffect: {
+		// 	crossFade: true
+		// },
+	});
+	mainSlider.controller.control = SliderText;
+	SliderText.controller.control = mainSlider;
+	const sliderAnimals = new Swiper(".slider__animals", {
+    spaceBetween: 0,
+    slidesPerView: 3,
+		speed: 2000,
+    centeredSlides: true,
+		autoplay: true,
+    roundLengths: true,
+    loop: true,
+    loopAdditionalSlides: 200,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    }
+  });
+	const sliderAdvantages = new Swiper(".slider__advantages", {
+    spaceBetween: 20,
+    slidesPerView: 3,
+		speed: 2000,
+		autoplay: true,
+    centeredSlides: true,
+    roundLengths: true,
+    loop: true,
+    loopAdditionalSlides: 200,
+    navigation: {
+      nextEl: ".swiper-button-next--advantages",
+      prevEl: ".swiper-button-prev--advantages"
+    }
+  });
 
 	let overlay = document.querySelector(".overlay")
 	let humburger = document.querySelector(".humburger")

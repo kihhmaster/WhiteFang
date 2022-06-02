@@ -20,14 +20,93 @@
 </head>
 
 <body>
-
-	<div style="max-width: 700px; margin: auto">
-
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
+<div class="section__topMenu">
+	<div class="container">
+		<div class="topMenu">
+			<div class="topMenu__logo"><img src="images/dist/logo.png" alt="logo"></div>
+			<div class="topMenu__saffary"><img src="images/dist/saffariStorm.svg" alt="logo"></div>
+			<div class="topMenu__contacts">
+				<div class="contacts__wrapp">
+					<img class="contacts__fon" src="images/dist/fono__icon.svg" alt="телефон">
+					<div class="contacts">
+						<a href="tel:+79999999999">8 999 999 99 99</a>
+						<p class="contacts__desc">Сваязаться с нами</p>
+					</div>
+					<div class="humburger"><img src="images/dist/humburger.svg" alt="icon"></div>
+				</div>
+			</div>
+		</div>
 
 	</div>
+	<div class="overlay animate__animated">
+		<div class="overlay__title">Меню</div>
+		<div class="overlay__clase"><img src="images/dist/overlay__clase__icon.svg" alt="icon"></div>
+		<ul class="overlay__firstList">
+			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Главная</a></li>
+			<li class="overlay__firstLevel ">
+				<p class="overlay__firstLevel__link">Услуги</p>
+				<ul class="overlay__secondList animate__animated">
+					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Чистка зубов</a></li>
+					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Удаление</a></li>
+					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Хирургия</a></li>
+					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Ортодантия</a></li>
+				</ul>
+			</li>
+			<li class="overlay__firstLevel ">
+				<p class="overlay__firstLevel__link">Услуги</p>
+				<ul class="overlay__secondList animate__animated">
+					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Чистка зубов</a></li>
+					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Удаление</a></li>
+					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Хирургия</a></li>
+					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Ортодантия</a></li>
+				</ul>
+			</li>
+			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">О нас</a></li>
+			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Контакты</a></li>
+			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Оборудование</a></li>
+			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Специалисты</a></li>
+		</ul>
+	</div>
+</div>
+
+
+<div class="section__main">
+
+	<div class="swiper main__slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide main__slider__slide black__bg">
+				<div class="main__slider__bg__center " data-swiper-parallax="20%" style="background-image: url(images/dist/main__slide__1.png);" ></div>
+			</div>
+			<div class="swiper-slide main__slider__slide black__bg">
+				<div class="main__slider__bg__center " data-swiper-parallax="20%" style="background-image: url(images/dist/main__slide__2.png);" ></div>
+			</div>
+			<div class="swiper-slide main__slider__slide black__bg">
+				<div class="main__slider__bg " data-swiper-parallax="20%" style="background-image: url(images/dist/main__slide__3.png);"></div>
+			</div>
+			<div class="swiper-slide main__slider__slide">
+				<div class="main__slider__bg " data-swiper-parallax="20%" style="background-image: url(images/dist/main__slide__5.png);"></div>
+			</div>
+			<div class="swiper-slide main__slider__slide">
+				<div class="main__slider__bg " data-swiper-parallax="20%" style="background-image: url(images/dist/main__slide__6.png);"></div>
+			</div>
+			<div class="swiper-slide main__slider__slide">
+				<div class="main__slider__bg " data-swiper-parallax="20%" style="background-image: url(images/dist/main__slide__7.png);"></div>
+			</div>
+			<div class="swiper-slide main__slider__slide">
+				<div class="main__slider__bg" data-swiper-parallax="20%" style="background-image: url(images/dist/main__slide__8.png);"></div>
+			</div>
+
+		</div>
+		<div class="main__slider__controll">
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+
+
+	</div>
+</div>
+
 
 	<script src="js/app.min.js"></script>
 
