@@ -2,8 +2,10 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	z-index: 90;
 	width: 100%;
-	height: 80vh;
+	height: 90vh;
+	min-height: 800px;
 }
 .slider__animals .swiper-slide {
 	position: relative;
@@ -11,12 +13,12 @@
 	display:flex;
 	align-items: flex-end;
 	justify-content: center;
-	transition: all 2s linear;
-	transform: scale(0.6);
+	transition: all 1.4s ease-in;
+	transform: scale(1) translateY(70px);
 	filter: grayscale(100%);
 	opacity: 0.3;
 	&.swiper-slide-active{
-		transform: scale(1.6);
+		transform: scale(1.3) translateY(-90px);
 		filter: grayscale(0%);
 		opacity: 1;
 	}

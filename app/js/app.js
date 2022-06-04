@@ -1,60 +1,14 @@
 // // Import vendor jQuery plugin example
 // import '~/app/libs/mmenu/dist/mmenu.js'
-import { Swiper, Pagination, Scrollbar, Navigation, Controller, Autoplay, Mousewheel, Parallax, EffectFade, EffectCoverflow} from 'swiper'
-Swiper.use([ Pagination, Scrollbar, Navigation, Controller, Autoplay, Mousewheel, Parallax, EffectFade, EffectCoverflow])
+import { Swiper, Pagination, Scrollbar, Navigation, Controller, Autoplay, Mousewheel, Parallax, EffectFade, EffectCoverflow, Thumbs} from 'swiper'
+Swiper.use([ Pagination, Scrollbar, Navigation, Controller, Autoplay, Mousewheel, Parallax, EffectFade, EffectCoverflow, Thumbs])
 document.addEventListener('DOMContentLoaded', () => {
-	const mainSlider = new Swiper(".main__slider", {
-		direction: "vertical",
-		loop: false,
-		speed: 1000,
-		parallax: true,
-		pagination: {
-			el: ".swiper-pagination",
-			type: 'fraction',
-			clickable: true,
-			paginationClickable: true,
-		},
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		effect: 'fade',
-		fadeEffect: {
-			crossFade: true
-		},
-	});
-	const SliderText = new Swiper(".slider__text", {
-		direction: "vertical",
-		loop: false,
-		speed: 1500,
-		parallax: true,
-		reverseDirection: false,
-		pagination: {
-			el: ".swiper-pagination",
-			type: 'fraction',
-			clickable: true,
-			paginationClickable: true,
-		},
-		navigation: {
-			nextEl: '.swiper-button-next--control',
-			prevEl: '.swiper-button-prev--control',
-		},
-		mousewheel: {
-			invert: false,
-		},
-		// effect: 'fade',
-		// fadeEffect: {
-		// 	crossFade: true
-		// },
-	});
-	mainSlider.controller.control = SliderText;
-	SliderText.controller.control = mainSlider;
 	const sliderAnimals = new Swiper(".slider__animals", {
     spaceBetween: 0,
     slidesPerView: 3,
 		speed: 2000,
     centeredSlides: true,
-		autoplay: true,
+		// autoplay: true,
     roundLengths: true,
     loop: true,
     loopAdditionalSlides: 200,
@@ -64,14 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 	const sliderAdvantages = new Swiper(".slider__advantages", {
-    spaceBetween: 20,
-    slidesPerView: 3,
-		speed: 2000,
-		autoplay: true,
-    centeredSlides: true,
-    roundLengths: true,
-    loop: true,
-    loopAdditionalSlides: 200,
+		spaceBetween: 30,
+		speed: 600,
+		freeMode: true,
+		loop: true,
+		pagination: false,
+		initialSlide: 0,
+		setWrapperSize: true,
+		centeredSlides: true,
+		slidesPerView: 'auto',
     navigation: {
       nextEl: ".swiper-button-next--advantages",
       prevEl: ".swiper-button-prev--advantages"
@@ -133,6 +88,29 @@ document.addEventListener('DOMContentLoaded', () => {
 				return false;
 		}
 	}
+	const sliderDoctorsThumds = new Swiper(".slider__doctors__thumds", {
+		spaceBetween: 10,
+		loop: true,
+		slidesPerView: 3,
+		freeMode: true,
+		watchSlidesProgress: true,
+	});
+	const sliderDoctors = new Swiper(".slider__doctors", {
+		spaceBetween: 10,
+		loop: true,
+		navigation: {
+			nextEl: ".swiper-button-next_slider__doctors",
+			prevEl: ".swiper-button-prev__slider__doctors",
+		},
+		thumbs: {
+			swiper: sliderDoctorsThumds,
+			autoScrollOffset: 3,
+			multipleActiveThumbs: false
+		},
+	});
+
+	// sliderDoctors.controller.control = sliderDoctorsThumds;
+	// sliderDoctorsThumds.controller.control = sliderDoctors;
 
 
 })

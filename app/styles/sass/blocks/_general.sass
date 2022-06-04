@@ -8,11 +8,88 @@
 	align-items: center
 	padding-left: 20px
 	padding-right: 20px
-.section__main
+.section
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+.slider__doctors__desc
+	position: absolute
+	left: 50px
+	bottom: 35px
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+.slider__doctors__thumds__desc
+	position: absolute
+	left: 24px
+	bottom: 10px
+	display: flex
+	justify-content: flex-start
+	align-items: flex-start
+	flex-flow: column nowrap
+	color: #FFFFFF
+.slider__doctors__white
+	.slider__doctors__thumds__desc
+		color: #121212
+.slider__doctors__thumds__name
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 400
+	font-size: 22px
+	line-height: 27px
+.slider__doctors__thumds__post
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 27px
+	opacity: 0.7
+.slider__doctors__white
+	.slider__doctors__surname,.slider__doctors__name,.slider__doctors__post
+		color: #121212
+.slider__doctors__surname
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 700
+	font-size: 64px
+	line-height: 32px
+	text-transform: uppercase
+	color: #FFFFFF
+	margin-bottom: 35px
+.slider__doctors__name
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 700
+	font-size: 32px
+	line-height: 32px
+	text-transform: uppercase
+	color: #FFFFFF
+	margin-bottom: 15px
+.slider__doctors__post
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 400
+	font-size: 22px
+	line-height: 28px
+	text-transform: uppercase
+	color: #FFFFFF
+	margin-bottom: 25px
+.section__animals
 	position: relative
 	width: 100%
 	height: 100vh
+	min-height: 800px
+	justify-content: flex-start
+	align-items: center
+	flex-flow: column nowrap
+.section__main
+	position: relative
+	width: 100%
 	display: flex
+	flex-flow: column nowrap
 	justify-content: center
 	align-items: center
 .main__slider
@@ -46,6 +123,7 @@
 	background-size: contain
 .button__fang
 	margin-top: 263px
+	z-index: 100
 .slide__fang__shadom__2
 	position: absolute
 	bottom: 0px
@@ -120,7 +198,7 @@
 	margin-top: 251px
 .slide__Aesthetics
 	display: flex
-	justify-content: center
+	justify-content: flex-end
 	align-items: center
 	width: 100%
 	max-width: 500px
@@ -141,26 +219,81 @@
 	line-height: 150%
 	text-align: center
 	margin-bottom: 40px
-.slider__advantages
-	position: relative
-	width: 80%
-	height: 100%
-	z-index: 3
-	display: flex
-	justify-content: center
-	align-items: center
-	.swiper-wrapper
-		justify-content: center
-		align-items: center
-.slider__advantages__slide
-	position: relative
+
+.section__advantages
+	background: #000
 	display: flex
 	flex-flow: column nowrap
 	justify-content: flex-start
 	align-items: center
-	color: #fff
+.advantages__slider__wrap
+	position: relative
 	width: 100%
-	height: 100px
+	display: flex
+	justify-content: center
+	align-items: center
+
+.slider__advantages__bg
+	width: 100%
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 77px
+.advantages__tooth
+	position: relative
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	width: 100%
+	.container
+		padding-right: 0
+		justify-content: flex-end
+.tooth
+	position: relative
+	width: 100%
+	max-width: 600px
+	display: flex
+	justify-content: flex-end
+	align-items: center
+.swiper-button-prev--advantages
+	left: 0
+.swiper-button-next--advantages
+	right: 0
+.slider__advantages
+	position: relative
+	width: 95%
+	max-width: 980px
+	z-index: 3
+	display: flex
+	justify-content: center
+	align-items: flex-end
+	padding-bottom: 127px
+	min-height: 400px
+	.swiper-wrapper
+		justify-content: center
+		align-items: center
+.slider__advantages__control
+	position: absolute
+	top: 93%
+	align-self: center
+	width: 160px
+	display: inline-block
+.slider__advantages__container
+	position: absolute
+	width: 100vw	
+	display: flex
+	top: 38%
+	justify-content: center
+	align-items: center
+.slider__advantages__slide
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	color: #fff
+	width: 300px
 	font-family: $userfont2
 	font-style: normal
 	font-weight: 700
@@ -170,8 +303,49 @@
 	text-transform: uppercase
 	img
 		margin-bottom: 16px 
-
-.swiper-button-next--advantages
-	position: absolute
-	bottom: 0
-	left: 0
+.section__services
+	background: #F5F5F5
+	height: 235px
+	display: flex
+	align-items: center
+	justify-content: center
+	.container
+		justify-content: space-between
+.secvice__desc
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+	max-width: 500px
+.service__title
+	position: relative
+	width: 100%
+	display: block
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 700
+	font-size: 32px
+	line-height: 150%
+	letter-spacing: 0.08em
+	text-transform: uppercase
+	color: #121212
+	margin-bottom: 20px
+.service__text
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 150%
+	color: #121212
+	width: 100%
+	position: relative
+	max-width: 380px
+.service__button
+	align-self: flex-end
+.section__doctors
+	padding-top: $gutter*2
+	background: #000
+	.container
+		flex-flow: column nowrap
