@@ -14,6 +14,8 @@
 	display: flex
 	justify-content: center
 	align-items: center
+	padding-top: 60px
+	padding-bottom: 80px
 .slider__doctors__desc
 	position: absolute
 	left: 50px
@@ -345,7 +347,218 @@
 .service__button
 	align-self: flex-end
 .section__doctors
-	padding-top: $gutter*2
 	background: #000
 	.container
 		flex-flow: column nowrap
+.section__twentytwenty
+	width: 100%
+	background: #fff
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+.twentytwenty__title
+	font-family: $userfont
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+	line-height: 24px
+	letter-spacing: 4px
+	text-transform: uppercase
+	color: #222222
+	opacity: 0.7
+.twentytwenty__h2
+	font-family: $userfont
+	font-style: normal
+	font-weight: 600
+	font-size: 40px
+	line-height: 50px
+	letter-spacing: 0.08em
+	text-transform: uppercase
+	color: #222222
+	margin-top: 20px
+	margin-bottom: 119px
+.twentytwenty__desc
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 150%
+	text-align: center
+	color: #121212
+	width: 100%
+	max-width: 470px
+	margin-top: 60px
+	margin-bottom: 70px
+
+
+
+#container1
+	position: relative
+	height: 335px
+	width: 710px
+	filter: drop-shadow(-30px 80px 200px rgba(0, 0, 0, 0.404))
+	img
+		object-fit: cover
+		object-position: 0 0
+.equipment__bg
+	background-position: 0 0
+	background-repeat: no-repeat
+	background-size: cover
+.section__equipment
+	position: relative
+	width: 100%
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+.equipment__desc
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-flow: column nowrap
+	width: 100%
+	max-width: 451px
+	color: #fff
+	text-align: center
+.equipment__h2 
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 700
+	font-size: 32px
+	line-height: 150%
+	text-align: center
+	letter-spacing: 0.08em
+	text-transform: uppercase
+	color: #FFFFFF
+	margin-bottom: 22px
+.equipment__text
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 400
+	font-size: 18px
+	line-height: 150%
+	text-align: center
+	color: #FFFFFF
+	margin-bottom: 40px
+.section__rooms
+	height: 90vh
+	width: 100%
+	padding-top: 0
+	padding-bottom: 0
+.slider__rooms
+	height: 100%
+	width: 100%
+.slider__rooms__slide
+	padding-top: 118px
+	padding-bottom: 95px
+	padding-left: 48px
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	flex-flow: column nowrap
+.rooms__addres
+	font-family: $userfont
+	font-style: normal
+	font-weight: 600
+	font-size: 40px
+	line-height: 50px
+	letter-spacing: 0.08em
+	text-transform: uppercase
+	color: #FFFFFF	
+.rooms__desc
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 150%
+	color: #FFFFFF
+	width: 100%
+	max-width: 337px
+.swiper-horizontal
+	.bullets__line.swiper-pagination
+		.swiper-pagination-bullet
+			position: relative
+			width: 22px
+			height: 22px
+			border: 2px solid #fff
+			background: transparent
+			opacity: 1
+			margin-right: 53px
+			&::before
+				content: url(#{$assetImages}/bullets__line__passive.svg)
+				position: absolute
+				left: 20px
+				bottom: 0px
+				z-index: 0
+			&:last-child
+				&::before
+					content: none
+		.swiper-pagination-bullet-active
+			width: 22px
+			height: 22px
+			background: linear-gradient(180deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%)
+			border: 2px solid #ffffff00
+			&::before
+				content: url(#{$assetImages}/bullets__line__active.svg)
+				position: absolute
+				left: 20px
+				bottom: 0px
+				z-index: 0
+
+.section__cards
+	height: 90vh
+	width: 100%
+	padding-top: 0
+	padding-bottom: 0
+	background-position: center center
+	background-size: cover 
+	background-repeat: no-repeat
+.section__news
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+.news
+	position: relative
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+.news__h2
+	font-family: $userfont
+	font-style: normal
+	font-weight: 600
+	font-size: 40px
+	line-height: 50px
+	letter-spacing: 0.08em
+	text-transform: uppercase
+
+.news__link
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 400
+	font-size: 20px
+	line-height: 50px
+	text-align: right
+	letter-spacing: -1px
+	text-transform: uppercase
+
+.news___buttons
+	position: relative
+	display: flex
+	width: 100%
+	justify-content: space-between
+	align-items: flex-start
+.news__cards
+	position: relative
+	width: 100vh
+	height: 650px
+.news__crad__big
+	position: relative
+
+	background-position: center center
+	background-size: cover 
+	background-repeat: no-repeat

@@ -1,0 +1,22 @@
+.news__cards {  
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 40px;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "news__crad__big news__card"
+    "news__crad__big news__card__2";
+}
+
+.news__crad__big { 
+	grid-area: news__crad__big; 
+}
+.news__card { 
+	grid-area: news__card; 
+}
+.news__card__2 { 
+	grid-area: news__card__2; 
+}
