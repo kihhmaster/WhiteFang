@@ -880,3 +880,35 @@
 		img
 			width: 25px
 			height: 19px
+.card
+	.front 
+		&::before
+			width: 100%
+			height: 100%
+			position: absolute
+			transition: all 1.5s ease 
+			top: 0
+			left: 0
+			content: url(#{$assetImages}/face-gold.png)
+			opacity: 0
+.card:hover
+	.front 
+		&::before
+			content: url(#{$assetImages}/face-gold.png)
+			opacity: 1
+.card
+	.back 
+		&::before
+			width: 100%
+			height: 100%
+			position: absolute
+			transition: all 1.5s ease 
+			top: 0
+			left: 0
+			content: url(#{$assetImages}/back-gold.png)
+			opacity: 0
+.card:hover.active
+	.back 
+		&::before
+			content: url(#{$assetImages}/back-gold.png)
+			opacity: 1

@@ -6,6 +6,12 @@ import '~/node_modules/zurb-twentytwenty/js/jquery.twentytwenty.js'
 import { Swiper, Pagination, Scrollbar, Navigation, Controller, Autoplay, Mousewheel, Parallax, EffectFade, EffectCoverflow, Thumbs} from 'swiper'
 Swiper.use([ Pagination, Scrollbar, Navigation, Controller, Autoplay, Mousewheel, Parallax, EffectFade, EffectCoverflow, Thumbs])
 document.addEventListener('DOMContentLoaded', () => {
+	let card = document.querySelector(".card")
+	if(card !=null) {
+		card.addEventListener("click", ()=>{
+			card.classList.toggle("active")
+		})
+	}
 	$(function(){
 		$("#container1").twentytwenty();
 	});
@@ -26,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     slidesPerView: 3,
 		speed: 2000,
     centeredSlides: true,
-		// autoplay: true,
+		autoplay: true,
     roundLengths: true,
     loop: true,
     loopAdditionalSlides: 200,

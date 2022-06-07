@@ -35,7 +35,11 @@
 .back {
   transform: rotateY(180deg);
 }
-.card:hover .front {
+// .card:hover .front {
+// 	transform: rotateY(180deg);}
+// .card:hover .back {
+// 	transform: rotateY(360deg);}
+.card.active .front {
 	transform: rotateY(180deg);}
-.card:hover .back {
+.card.active .back {
 	transform: rotateY(360deg);}
