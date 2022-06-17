@@ -14,14 +14,21 @@
 	outline: none
 	transition: background-color .1s ease
 	cursor: pointer
+	z-index: 4
 	&:focus, &:hover
 		text-decoration: none
 		color: #fff
 	&:hover
-		background-color: lighten($accent, 5%)
+		background-color: lighten(#fff, 20%)
 		&::after
 			opacity: .22
 	&:active
-		background-color: darken($accent, 5%)
+		background-color: darken(#fff, 20%)
 		&::after
 			opacity: .32
+.button__fon
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center

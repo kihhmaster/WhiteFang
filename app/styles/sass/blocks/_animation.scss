@@ -7,9 +7,7 @@
   transition: all .2s;
 
 }
-.button {
-	border: 3px solid;
-  border-image: linear-gradient(180deg, #875F46 0%, #CBC270 49.48%, #A5804F 100%) 10;
+.button__fon {	
 	text-decoration: none;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -18,7 +16,54 @@
   transition: all .2s;
 
 }
+.button {
+	border: 3px solid;
+  border-image: linear-gradient(180deg, #875F46 0%, #CBC270 49.48%, #A5804F 100%) 10;
+	transition: all .2s;
+}
 .button:hover {
+	border: 3px solid;
+	border-image: linear-gradient(170deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%) 10;
+	animation: backgroundBorder 2s;
+}
+@keyframes backgroundBorder {
+  0% {
+		border-image: linear-gradient(180deg, #875F46 0%, #CBC270 49.48%, #A5804F 100%) 10;
+    background-position:  0px 0;
+  }
+	30%{
+		border-image: linear-gradient(-170deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%) 10;
+		background-position: 100% 0;
+	}
+	50%{
+		border-image: linear-gradient(-130deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%) 10;
+		background-position: 100% 0;
+	}
+	70%{
+		border-image: linear-gradient(90deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%) 10;
+		background-position: 100% 0;
+	}
+	80%{
+		border-image: linear-gradient(130deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%) 10;
+		background-position: 100% 0;
+	}
+	100%{
+		border-image: linear-gradient(170deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%) 10;
+		background-position: 100% 0;
+	}
+}
+
+
+
+.button:hover .button__fon {
+	background-image: linear-gradient(90deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%);
+	animation: background 2s 1;
+}
+.button__cards {
+	border: 3px solid;
+  border-image: linear-gradient(180deg, #875F46 0%, #CBC270 49.48%, #A5804F 100%) 10;
+}
+.button__cards:hover {
 	background-image: linear-gradient(90deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%);
 	animation: background 2s 1;
 }

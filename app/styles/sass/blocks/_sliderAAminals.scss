@@ -13,7 +13,7 @@
 	display:flex;
 	align-items: flex-end;
 	justify-content: center;
-	transition: all 1.4s ease-in;
+	transition: all 1.4s ease-in-out;
 	transform: scale(1) translateY(70px);
 	filter: grayscale(100%);
 	opacity: 0.3;

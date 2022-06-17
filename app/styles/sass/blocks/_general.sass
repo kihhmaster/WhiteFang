@@ -204,6 +204,7 @@
 	width: 100%
 	max-width: 500px
 	flex-flow: column
+	margin-right: 500px
 	color: #fff
 .slide__Aesthetics__title
 	font-family: $userfont2
@@ -241,15 +242,26 @@
 	justify-content: center
 	align-items: center
 	margin-top: 77px
+.section.section__advantages
+	padding-bottom: 0
 .advantages__tooth
 	position: relative
 	display: flex
 	justify-content: flex-end
 	align-items: center
 	width: 100%
+	padding-top: 0
+	height: 100vh
+	background-position: top right
+	background-repeat: no-repeat
+	background-size: cover
 	.container
 		padding-right: 0
 		justify-content: flex-end
+.tooth__bg
+	background-position: 0 0
+	background-repeat: no-repeat
+	background-size: cover
 .tooth
 	position: relative
 	width: 100%
@@ -257,6 +269,10 @@
 	display: flex
 	justify-content: flex-end
 	align-items: center
+// 	transform: scale(.8) translateX(100px)
+// .tooth.tooth-transition
+// 	transition: all 10s ease-in-out 1s
+// 	transform: scale(1) translateX(0px)
 .swiper-button-prev--advantages
 	left: 0
 .swiper-button-next--advantages
@@ -294,16 +310,22 @@
 	justify-content: center
 	align-items: center
 	color: #fff
-	width: 300px
 	font-family: $userfont2
 	font-style: normal
 	font-weight: 700
 	font-size: 20px
+	width: 100%
+	max-width: 300px
 	line-height: 150%
 	text-align: center
 	text-transform: uppercase
 	img
 		margin-bottom: 16px 
+.slider__advantages
+	.swiper-slide
+		display: flex
+		justify-content: center
+		align-items: center
 .section__services
 	background: #f5f5f52f
 	height: 235px
@@ -507,12 +529,19 @@
 
 .section__cards
 	height: 90vh
+	min-height: 700px
 	width: 100%
 	padding-top: 0
-	padding-bottom: 0
+	flex-flow: column nowrap
+	align-items: center
+	justify-content: flex-end
 	background-position: center center
 	background-size: cover 
 	background-repeat: no-repeat
+.cards__wrapper
+	position: relative
+	width: 100%	
+	height: 80vh
 .section__news
 	position: relative
 	display: flex
@@ -568,6 +597,8 @@
 	justify-content: flex-start
 	align-items: flex-start
 	margin-right: 40px
+	&:hover
+		box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1)
 .news__card__1
 	margin-bottom: 36px
 .news__card__litle
@@ -584,6 +615,8 @@
 	justify-content: flex-start
 	align-items: flex-start
 	height: 294px
+	&:hover
+		box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.1)
 .news__card__img
 	width: 280px
 	height: 100%
@@ -597,6 +630,7 @@
 	flex-flow: column nowrap
 	height: 100%
 	width: 100%
+	background: #fff
 	border-radius: 0 5px 5px 0	
 	border-right: 2px solid #000000
 	border-top: 2px solid #000000
@@ -659,12 +693,7 @@
 	max-width: 346px
 	display: flex
 	flex-flow: column nowrap
-.section__map
-	display: flex
-	justify-content: center
-	align-items: center
-	height: 100vh
-	overflow: hidden
+
 .section__map__img	
 	object-fit: cover
 	object-position: center center
@@ -754,6 +783,58 @@
 	font-size: 48px
 	line-height: 40px
 	letter-spacing: 0.02px
+.form-at-btn
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	.button__fon
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+	span
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 30px
+		height: 28px
+		margin-left: 10px
+		mask-image: url(#{$assetImages}/form__button.svg)
+		-webkit-mask-repeat: no-repeat
+		background: #000
+		margin-right: 9px
+.button.button__callMe
+	border-image: linear-gradient(180deg, #000000 0%, #000 49.48%, #000 100%) 10
+.button.button__callMe
+	&:hover
+		border-image: linear-gradient(170deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%) 10
+.form-at-btn
+	border-image: linear-gradient(180deg, #000000 0%, #000 49.48%, #000 100%) 10
+.form-at-btn
+	&:hover
+		border-image: linear-gradient(180deg, #875F46 0%, #CBC270 49.48%, #A5804F 100%) 10
+
+.form-at-btn
+	&:hover
+		span
+			transition: background .1s ease
+			background: linear-gradient(180deg, #875F46 0%, #CBC270 49.48%, #A5804F 100%)
+.button__WS
+	span
+		mask-image: url(#{$assetImages}/callMe__watt.svg)
+		-webkit-mask-repeat: no-repeat
+		width: 24px
+		height: 24px
+		background: #000
+		margin-right: 9px
+.button__WS
+	&:hover
+		span
+			mask-image: url(#{$assetImages}/callMe__watt.svg)
+			transition: background .1s ease
+			background: linear-gradient(180deg, #875F46 0%, #CBC270 49.48%, #A5804F 100%)
 .form__callMe__right
 	position: relative
 	width: 100%
@@ -877,16 +958,13 @@
 		width: 86px
 		height: 61px
 		margin-left: 9px
-		img
-			width: 25px
-			height: 19px
 .card
 	.front 
 		&::before
 			width: 100%
 			height: 100%
 			position: absolute
-			transition: all 1.5s ease 
+			transition: all .3s ease 
 			top: 0
 			left: 0
 			content: url(#{$assetImages}/face-gold.png)
@@ -902,7 +980,7 @@
 			width: 100%
 			height: 100%
 			position: absolute
-			transition: all 1.5s ease 
+			transition: all .3s ease 
 			top: 0
 			left: 0
 			content: url(#{$assetImages}/back-gold.png)
@@ -912,3 +990,254 @@
 		&::before
 			content: url(#{$assetImages}/back-gold.png)
 			opacity: 1
+
+
+.button__cards
+	display: inline-block
+	color: #fff
+	text-decoration: none
+	background-color: #ffffff00
+	border: 3px solid #fff
+	padding: 10px 0px
+	font-size: 18px
+	font-family: $userfont2
+	text-transform: uppercase
+	font-weight: 700
+	letter-spacing: 3px
+	text-align: center
+	position: relative
+	outline: none
+	width: 100%
+	max-width: 338px
+	transition: background-color .1s ease
+	cursor: pointer
+	font-style: normal
+	font-weight: 700
+	font-size: 18px
+	line-height: 50px
+	text-align: center
+	letter-spacing: -1px
+	text-transform: uppercase
+	color: #FFFFFF
+	&:hover
+		text-decoration: none
+		color: $textcolor
+	&:hover
+		background-color: lighten(#fff, 20%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken(#fff, 20%)
+		&::after
+			opacity: .32
+
+.section__start
+	.topMenu__contacts 
+		max-width: 50px
+.start__desc__1
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: flex-end
+	text-align: center
+	.start__desc__elemen 
+		justify-content: flex-start
+		justify-content: center
+	.desc__elementLeft__text
+		text-align: left
+.section__start--200
+	background: #fff
+	.start__desc
+		height: 100vh
+	.section__center__img
+		object-fit: cover
+
+.section__aboutUs
+	position: relative
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: flex-start
+	width: 100%
+	height: auto
+	padding: 0
+	.section__start--200
+		position: relative
+		height: 100vh
+	.section__topMenu
+		position: fixed
+		top: 0
+		.topMenu
+			padding-top: 10px
+			padding-bottom: 10px
+		
+.section__emblem
+	position: relative
+	width: 100%
+	display: flex
+	background: #000
+	height: 100vh
+.section__doubleF
+	position: relative
+	width: 100%
+	display: flex
+	background: #000
+	height: 100vh
+	padding-bottom: 56px
+	align-items: flex-end
+	.start__desc__1
+		flex-flow: column nowrap
+		justify-content: center
+		align-items: center
+		max-width: 700px
+		.start__desc__elemen
+			max-width: 700px
+	.section__center__img
+		max-height: 472px
+		max-width: 472px
+		object-fit: contain
+	.start__desc__elementRight
+		justify-content: center
+		text-align: center
+	.desc__elementLeft__title
+		width: 100%
+		text-align: center
+		margin-top: 53px
+	.desc__elementLeft__text
+		width: 100%
+		text-align: center
+		margin-top: 20px
+.hidde
+	display: none !important
+.show
+	display: flex		
+.aboutUs
+	width: 100vw	
+	height: 100vh
+	.topMenu__contacts
+		max-width: none
+	.swiper-slide
+		display: flex
+		justify-content: center
+		align-items: center
+.aboutUs
+	.swiper-slide
+		.section__center__img,.start__desc__elementRight,.start__desc__elementLeft, .start__desc
+			opacity: 0
+.aboutUs
+	.swiper-slide.swiper-slide-active
+		.section__center__img,.start__desc__elementRight,.start__desc__elementLeft, .start__desc
+			opacity: 1
+			transition: all 2s ease-in-out 1s
+.section__power
+	position: relative
+	height: 100vh
+	.start__desc
+		flex-flow: column nowrap
+
+
+.section__power
+	.start__desc__elemen
+		color: #000
+		width: 100%
+		max-width: 1178px
+		text-align: center
+	.desc__elementLeft__text
+		width: 100%
+		max-width: none
+		margin-top: 65px
+		font-family: $userfont2
+		font-style: normal
+		font-weight: 400
+		font-size: 26px
+		line-height: 150%
+		text-align: center
+		color: #121212
+.power__items
+	position: relative
+	display: flex
+	width: 100%
+	max-width: 1400px
+	flex-flow: row wrap
+	justify-content: center
+	align-items: flex-start
+.power__item
+	position: relative
+	width: 400px
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	text-align: center
+	margin-top: 85px
+	&:last-child
+		width: 680px
+.power__item__text
+	margin-top: 18px
+	font-family: $userfont2
+	font-style: normal
+	font-weight: 400
+	font-size: 26px
+	line-height: 150%
+	text-align: center
+	color: #121212
+
+.section__symbols
+	position: relative
+	height: 100vh
+	align-items: flex-end
+	.start__desc
+		justify-content: space-between
+	.container
+		align-items: flex-end
+	.start__desc__elemen
+		width: 100%
+		max-width: 700px
+	.desc__elementLeft__title
+		color: #121212
+	.desc__elementLeft__text
+		width: 100%
+		max-width: none
+		margin-top: 25px
+		font-family: $userfont2
+		font-style: normal
+		font-weight: 400
+		font-size: 26px
+		line-height: 150%
+		color: #121212
+.compani__lists
+	display: flex
+	position: relative
+	width: 100%
+	justify-content: space-between
+	align-items: center
+	margin-top: 50px
+.section__company
+	position: relative
+	width: 100%
+	display: flex
+	background: #000
+	height: 100vh
+	padding-bottom: 56px
+	align-items: flex-start
+	.desc__elementLeft__title
+		font-family: $userfont
+		font-style: normal
+		font-weight: 400
+		font-size: 40px
+		line-height: 62px
+		letter-spacing: 0.08em
+		text-transform: uppercase
+		color: #FFFFFF
+		width: 100%
+		max-width: 1200px
+	.start__desc__1
+		flex-flow: column nowrap
+		margin-top: 131px
+	.start__desc__elemen
+		width: 100%
+		max-width: 1200px
+.aboutUs
+	.swiper-pagination
+		.swiper-pagination-bullet
+			background: #fff

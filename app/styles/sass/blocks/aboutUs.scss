@@ -1,0 +1,254 @@
+.section__start {
+	height: 100vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #000;
+	width: 100%;
+}
+.start__desc {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.start__desc__elemen {
+	position: relative;
+	width: 100%;
+	max-width: 460px;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.desc__elementLeft__title {
+	font-family: $userfont;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 38px;
+	line-height: 62px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #ffff;
+}
+.desc__elementLeft__text {
+	font-family: $userfont;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: #FFFFFF;
+}
+
+html {
+	overflow-x: hidden;
+	width: 100%;
+}
+// .section__start--200 {
+// 	position: absolute;
+// 	top: 100vh;
+// 	left: 0vw;
+// 	background: #fff;
+// 	height: 100vh;
+// 	height: 100vh;
+// 	background-position: center center;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	width: 100%;
+// }
+.section__start--200 .start__desc__elemen {
+	justify-content: space-between;
+}
+.section__start--200 .desc__elementLeft__title {
+	color: #000
+}
+.section__start--200 .desc__elementLeft__text {
+	color: #000
+}
+.section__start--200 .start__desc {
+	justify-content: space-between;
+}
+body.start {
+	padding: 0;
+	overflow-x: hidden;
+	width: 100%;
+	height: 480vh;
+	color: white;
+	position: relative;
+}
+
+.bottombutton {
+	background-image: url(./assets/button-bg.jpg);
+	width: 250px;
+	height: 70px;
+	background-size: 160px;
+	color: white;
+	font-weight: 800;
+	text-align: center;
+	line-height: 70px;
+	font-size: 30px;
+	text-decoration: none;
+	position: absolute;
+	top: 425vh;
+	border-radius: 20px;
+	left: 50vw;
+	margin-left: -125px;
+	z-index: 100;
+	pointer-events: all;
+	cursor: pointer;
+}
+
+.bottombg {
+	background-color: #8d77ed;
+	width: 100vw;
+	height: 100vh;
+	top: 380vh;
+	z-index: 50;
+	position: absolute;
+}
+
+.letter-l {
+	margin-top: 100px;
+	width: 200px;
+	left: 50vw;
+	margin-left: -75px;
+	position: fixed;
+	left: 50vw;
+	margin-left: -75px;
+}
+
+.letter-a {
+	margin-top: 158px;
+	position: fixed;
+	left: 50vw;
+	margin-left: -77px;
+	width: 150px;
+}
+
+.letter-x {
+	margin-top: 85px;
+	position: fixed;
+	left: 50vw;
+	margin-left: -300px;
+	transform: scale(0.25);
+	transform-origin: 50% 50%;
+	width: 600px;
+	height: 600px;
+}
+
+.letter-x img {
+	width: 600px;
+	position: absolute;
+}
+
+.scrolldown {
+	bottom: 90px;
+	height: 40px;
+	position: fixed;
+	width: 300vw;
+	left: -100vw;
+	font-size: 40px;
+	text-align: center;
+}
+
+.oooh {
+	font-size: 150px;
+	position: absolute;
+	left: 0;
+	top: 140vh;
+}
+
+.aaah {
+	font-size: 150px;
+	position: absolute;
+	right: 0;
+	top: 170vh;
+}
+
+.wheee {
+	top: 230vh;
+	position: absolute;
+	left: 0;
+	height: 50px;
+	font-size: 100px;
+}
+
+.downarrows {
+	bottom: 60px;
+	position: fixed;
+	left: 50vw;
+	width: 70px;
+	margin-left: -35px;
+	height: 26px;
+}
+
+.downarrows img {
+	width: 70px;
+	position: absolute;
+}
+
+.bubbles {
+	top: -100vh;
+	position: fixed;
+	-webkit-transform: translate3d(0, 0, 0);
+	z-index: 5;
+}
+
+.bubble {
+	width: 140px;
+	height: 140px;
+	opacity: 1;
+	position: absolute;
+}
+
+.bubble.red {
+	background: #a94fe4;
+}
+
+.bubble.blue {
+	background: #68e4f1;
+}
+
+.bubble.yellow {
+	background: #ffe773;
+}
+
+.zags {
+	margin-top: 250vh;
+	z-index: 100;
+	position: relative;
+	overflow: hidden;
+	height: 150vh;
+}
+
+.zag {
+	width: 100vw;
+	height: 150vh;
+	position: absolute;
+}
+
+#pinkZag {
+	background-image: url(./assets/pink-zag.png);
+	background-size: 200px;
+	background-repeat: repeat-x;
+	background-position-y: bottom;
+}
+
+#tealZag {
+	background-image: url(./assets/teal-zag.png);
+	background-size: 200px;
+	background-repeat: repeat-x;
+	background-position-y: bottom;
+}
+
+#purpleZag {
+	background-image: url(./assets/purple-zag.png);
+	background-size: 200px;
+	background-repeat: repeat-x;
+	background-position-y: bottom;
+}
+
+.bottom {
+	margin-top: 400vh;
+}
