@@ -81,7 +81,6 @@
 	position: relative
 	width: 100%
 	height: 100vh
-	min-height: 800px
 	justify-content: flex-start
 	align-items: center
 	flex-flow: column nowrap
@@ -123,14 +122,14 @@
 	background-repeat: no-repeat
 	background-size: contain
 .button__fang
-	margin-top: 263px
-	z-index: 100
+	margin-top: 200px
+	z-index: 900
 .slide__fang__shadom__2
 	position: absolute
 	bottom: 0px
 	width: 100%
-	height: 163px
-	z-index: 10
+	height: 153px
+	z-index: 100
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)
 .main__slider__bg__center
 	position: absolute
@@ -199,12 +198,11 @@
 	margin-top: 251px
 .slide__Aesthetics
 	display: flex
-	justify-content: flex-end
+	justify-content: center
 	align-items: center
 	width: 100%
 	max-width: 500px
 	flex-flow: column
-	margin-right: 500px
 	color: #fff
 .slide__Aesthetics__title
 	font-family: $userfont2
@@ -228,9 +226,11 @@
 	flex-flow: column nowrap
 	justify-content: flex-start
 	align-items: center
+	padding-top: 0
 .advantages__slider__wrap
 	position: relative
 	width: 100%
+	height: 110vh
 	display: flex
 	justify-content: center
 	align-items: center
@@ -247,7 +247,7 @@
 .advantages__tooth
 	position: relative
 	display: flex
-	justify-content: flex-end
+	justify-content: center
 	align-items: center
 	width: 100%
 	padding-top: 0
@@ -256,8 +256,9 @@
 	background-repeat: no-repeat
 	background-size: cover
 	.container
+		align-items: center
 		padding-right: 0
-		justify-content: flex-end
+		justify-content: center
 .tooth__bg
 	background-position: 0 0
 	background-repeat: no-repeat
@@ -277,19 +278,6 @@
 	left: 0
 .swiper-button-next--advantages
 	right: 0
-.slider__advantages
-	position: relative
-	width: 95%
-	max-width: 980px
-	z-index: 3
-	display: flex
-	justify-content: center
-	align-items: flex-end
-	padding-bottom: 127px
-	min-height: 400px
-	.swiper-wrapper
-		justify-content: center
-		align-items: center
 .slider__advantages__control
 	position: absolute
 	top: 93%
@@ -298,11 +286,18 @@
 	display: inline-block
 .slider__advantages__container
 	position: absolute
-	width: 100vw	
+	width: 100%
+	max-width: 980px	
 	display: flex
 	top: 38%
 	justify-content: center
 	align-items: center
+.slider__advantages
+	position: relative
+	width: 95%
+	max-width: 980px
+	z-index: 3
+	min-height: 400px
 .slider__advantages__slide
 	position: relative
 	display: flex
@@ -322,10 +317,18 @@
 	img
 		margin-bottom: 16px 
 .slider__advantages
-	.swiper-slide
-		display: flex
-		justify-content: center
-		align-items: center
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	max-width: 980px
+	.swiper-wrapper
+		.swiper-slide
+			display: flex
+			width: 180px
+			justify-content: center
+			align-items: flex-start
 .section__services
 	background: #f5f5f52f
 	height: 235px
@@ -377,6 +380,17 @@
 	flex-flow: column nowrap
 	justify-content: flex-start
 	align-items: center
+	.container
+		flex-flow: column nowrap
+.twentytwenty-wrapper
+	position: relative
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: 5px
+.twentytwenty-container
+	border-radius: 10px
 .twentytwenty__title
 	font-family: $userfont
 	font-style: normal
@@ -422,7 +436,7 @@
 		object-fit: cover
 		object-position: 0 0
 .equipment__bg
-	background-position: 0 0
+	background-position: bottom right 
 	background-repeat: no-repeat
 	background-size: cover
 .section__equipment
@@ -463,7 +477,7 @@
 	color: #FFFFFF
 	margin-bottom: 40px
 .section__rooms
-	height: 90vh
+	height: 100vh
 	width: 100%
 	padding-top: 0
 	padding-bottom: 0
@@ -475,9 +489,13 @@
 	padding-bottom: 95px
 	padding-left: 48px
 	display: flex
+	height: 100%
 	justify-content: space-between
 	align-items: flex-start
 	flex-flow: column nowrap
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
 .rooms__addres
 	font-family: $userfont
 	font-style: normal
@@ -496,7 +514,7 @@
 	color: #FFFFFF
 	width: 100%
 	max-width: 337px
-.swiper-horizontal
+.swiper
 	.bullets__line.swiper-pagination
 		.swiper-pagination-bullet
 			position: relative
@@ -515,7 +533,7 @@
 			&:last-child
 				&::before
 					content: none
-		.swiper-pagination-bullet-active
+		.bulletActive, .swiper-pagination-bullet-active
 			width: 22px
 			height: 22px
 			background: linear-gradient(180deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%)
@@ -693,7 +711,15 @@
 	max-width: 346px
 	display: flex
 	flex-flow: column nowrap
-
+	z-index: 20
+.section__map
+	position: relative
+	width: 100%
+	height: 100vh
+	background-position: left bottom
+	background-size: cover
+	background-repeat: no-repeat
+	cursor: pointer
 .section__map__img	
 	object-fit: cover
 	object-position: center center
@@ -805,9 +831,14 @@
 		-webkit-mask-repeat: no-repeat
 		background: #000
 		margin-right: 9px
-.button.button__callMe
+.button.button__black
 	border-image: linear-gradient(180deg, #000000 0%, #000 49.48%, #000 100%) 10
-.button.button__callMe
+.button.button__black
+	&:hover
+		border-image: linear-gradient(170deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%) 10
+.button.button__white
+	border-image: linear-gradient(180deg, #fff 0%, #fff 49.48%, #fff 100%) 10
+.button.button__white
 	&:hover
 		border-image: linear-gradient(170deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%) 10
 .form-at-btn
@@ -888,6 +919,15 @@
 	justify-content: space-between
 	align-items: flex-start
 	margin-top: 76px
+.section__doctors
+	.doctor-cols-swiper-pagination span:before
+		background: #ffffff69
+	.doctor-cols-swiper-pagination .swiper-pagination-bullet-active
+		background: linear-gradient(180deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%)
+		border-color: transparent
+	.doctor-cols-swiper-pagination .swiper-pagination-bullet-active:before
+		background: linear-gradient(180deg, #875F46 0%, #E6DC87 49.48%, #A5804F 100%)
+
 .form__writeMe__left
 	position: relative
 	width: 100%
@@ -990,47 +1030,6 @@
 		&::before
 			content: url(#{$assetImages}/back-gold.png)
 			opacity: 1
-
-
-.button__cards
-	display: inline-block
-	color: #fff
-	text-decoration: none
-	background-color: #ffffff00
-	border: 3px solid #fff
-	padding: 10px 0px
-	font-size: 18px
-	font-family: $userfont2
-	text-transform: uppercase
-	font-weight: 700
-	letter-spacing: 3px
-	text-align: center
-	position: relative
-	outline: none
-	width: 100%
-	max-width: 338px
-	transition: background-color .1s ease
-	cursor: pointer
-	font-style: normal
-	font-weight: 700
-	font-size: 18px
-	line-height: 50px
-	text-align: center
-	letter-spacing: -1px
-	text-transform: uppercase
-	color: #FFFFFF
-	&:hover
-		text-decoration: none
-		color: $textcolor
-	&:hover
-		background-color: lighten(#fff, 20%)
-		&::after
-			opacity: .22
-	&:active
-		background-color: darken(#fff, 20%)
-		&::after
-			opacity: .32
-
 .section__start
 	.topMenu__contacts 
 		max-width: 50px
@@ -1047,11 +1046,23 @@
 		text-align: left
 .section__start--200
 	background: #fff
+	.start__desc__elementRight
+		.desc__elementLeft__title
+			color: #ffffff00
 	.start__desc
 		height: 100vh
 	.section__center__img
 		object-fit: cover
-
+.slider__aboutUs--desc
+	display: flex
+.aboutUs__UpElement--decs
+	display: flex
+.slider__aboutUs--mob
+	display: none
+.aboutUs__UpElement--mob
+	display: none
+.aboutUs--mob
+	display: none
 .section__aboutUs
 	position: relative
 	display: flex
@@ -1070,7 +1081,25 @@
 		.topMenu
 			padding-top: 10px
 			padding-bottom: 10px
-		
+.topMenu.noFone
+	.topMenu__logo
+		width: 100%
+	.topMenu__saffary
+		width: 100%
+.topMenu__saffary
+	cursor: pointer
+.topMenu
+	.topMenu__logo
+		width: 100%
+		display: flex
+		justify-content: flex-start
+		align-items: center
+	.topMenu__saffary
+		width: 100%
+		display: flex
+		justify-content: flex-start
+		align-items: center
+
 .section__emblem
 	position: relative
 	width: 100%
@@ -1084,7 +1113,8 @@
 	background: #000
 	height: 100vh
 	padding-bottom: 56px
-	align-items: flex-end
+	align-items: center
+	padding-top: 140px
 	.start__desc__1
 		flex-flow: column nowrap
 		justify-content: center
@@ -1120,6 +1150,13 @@
 		display: flex
 		justify-content: center
 		align-items: center
+.doubleF__img 
+	width: 25vw
+.symbols__img
+	width: 40vw
+.section__symbols
+	.start__desc__elemen
+		margin-right: 60px
 .aboutUs
 	.swiper-slide
 		.section__center__img,.start__desc__elementRight,.start__desc__elementLeft, .start__desc
@@ -1185,7 +1222,8 @@
 .section__symbols
 	position: relative
 	height: 100vh
-	align-items: flex-end
+	align-items: flex-start
+	padding-top: 140px
 	.start__desc
 		justify-content: space-between
 	.container
@@ -1230,14 +1268,127 @@
 		text-transform: uppercase
 		color: #FFFFFF
 		width: 100%
-		max-width: 1200px
+		max-width: 1356px
 	.start__desc__1
 		flex-flow: column nowrap
 		margin-top: 131px
 	.start__desc__elemen
 		width: 100%
-		max-width: 1200px
+		max-width: 1356px
+		display: flex
+		justify-content: center
 .aboutUs
 	.swiper-pagination
 		.swiper-pagination-bullet
 			background: #fff
+.aboutUs__UpElement
+	position: absolute
+	width: 100vw
+	height: 100vh
+	top: 0
+	left: 0
+	z-index: 50
+	display: flex
+	justify-content: center
+	align-items: center
+.UpElement
+	transition: opacity 2s ease-in-out
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	margin: auto
+	opacity: 0
+	z-index: 10
+.showUpElement
+	transition: all 2s ease-in-out
+	opacity: 1
+.section__start--200.section__start--200-2
+	.start__desc
+		justify-content: flex-end
+.UpElement.UpElement__4
+	transform: translateY(-70%)
+.UpElement.UpElement__4.UpElement__4__delay
+	transition: all 0.2s ease-in-out
+	transform: translateY(-70%)
+.UpElement.UpElement__3.UpElement__3__delay
+	transition: all 0.2s ease-in-out
+// .menuWhite
+// 	transition: all 4s ease-in-out
+// .menuBlack
+// 	transition: all 4s ease-in-out
+// .aboutUs
+// 	.swiper-slide
+// 		.section
+// 			transition: all 4s ease-in-out
+.section__doctors
+	.doctor-cols-carousel
+		padding-bottom: 50px
+	.doctor-cols-carousel__controls
+		width: 100px
+		margin-top: 40px
+	.doctor-cols
+		width: 100%
+		padding-bottom: 0
+	.doctor-image__wrap
+		width: 100%
+		img
+			position: relative
+			width: 100%
+	.doctor-cols-swiper-pagination
+		display: none
+.section__aboutUs,.doctor__wrapp
+	.x4
+		top: 30%
+		left: 80%
+	.x6
+		top: 50%
+		left: 70%
+	.x1
+		top: 25%
+.section__symbols
+	.section__center__img
+		z-index: 50
+.section__power.section__power__2
+	align-items: flex-end
+	.container
+		align-items: flex-end
+	.start__desc 
+		align-items: flex-end
+.section__company
+	.desc__elementLeft__title
+		width: 100%
+		text-align: center
+.footer__link__mob
+	display: none
+.section__power
+	.start__desc
+		display: flex
+		height: 100vh
+		justify-content: flex-start
+		align-items: center
+		padding-top: 55vh
+.UpElement.UpElement__4
+	top: 20vh
+.slide__section__company
+	z-index: 100
+.slider__company
+	position: relative
+	width: 100%
+	margin-top: 50px
+	display: flex
+	justify-content: center
+	align-items: center
+	.swiper-wrapper
+		width: 100%
+		display: flex
+		align-items: center
+.slide__company
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 100%
+	img
+		object-fit: cover

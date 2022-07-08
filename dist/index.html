@@ -22,19 +22,20 @@
 <body>
 
 
-<div class="section__main">
+<div class="section__main" id="page">
 	<div class="section section__animals">
 		<div class="section__topMenu">
 	<div class="container">
 		<div class="topMenu">
-			<div class="topMenu__logo"><img src="images/dist/logo.png" alt="logo"></div>
-			<div class="topMenu__saffary"><img src="images/dist/saffariStorm.svg" alt="logo"></div>
+
+			<div  class="topMenu__logo"><img src="images/dist/logo.png" alt="logo"></div>
+			<a href="index.html" class="topMenu__saffary"><img src="images/dist/saffariStorm.svg" alt="logo"></a>
 			<div class="topMenu__contacts">
 				<div class="contacts__wrapp">
 					<img class="contacts__fon" src="images/dist/fono__icon.svg" alt="телефон">
 					<div class="contacts">
-						<a class="gold" href="tel:+79999999999">8 999 999 99 99</a>
-						<p class="contacts__desc">Сваязаться с нами</p>
+						<a class="contacts__top gold" href="tel:+79999999999">8 999 999 99 99</a>
+						<p class="contacts__top contacts__desc">Сваязаться с нами</p>
 					</div>
 					<div class="humburger"><img src="images/dist/humburger.svg" alt="icon"></div>
 				</div>
@@ -42,35 +43,30 @@
 		</div>
 
 	</div>
-	<div class="overlay animate__animated">
-		<div class="overlay__title">Меню</div>
-		<div class="overlay__clase"><img src="images/dist/overlay__clase__icon.svg" alt="icon"></div>
-		<ul class="overlay__firstList">
-			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Главная</a></li>
-			<li class="overlay__firstLevel ">
-				<p class="overlay__firstLevel__link">Услуги</p>
-				<ul class="overlay__secondList animate__animated">
-					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Чистка зубов</a></li>
-					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Удаление</a></li>
-					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Хирургия</a></li>
-					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Ортодантия</a></li>
-				</ul>
-			</li>
-			<li class="overlay__firstLevel ">
-				<p class="overlay__firstLevel__link">Услуги</p>
-				<ul class="overlay__secondList animate__animated">
-					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Чистка зубов</a></li>
-					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Удаление</a></li>
-					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Хирургия</a></li>
-					<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Ортодантия</a></li>
-				</ul>
-			</li>
-			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="aboutUs.html">О нас</a></li>
-			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Контакты</a></li>
-			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Оборудование</a></li>
-			<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Специалисты</a></li>
-		</ul>
+	<div class="overlay__wrapp animate__animated">
+		<div class="overlay">
+			<div class="overlay__title">Меню</div>
+			<div class="overlay__clase"><img src="images/dist/overlay__clase__icon.svg" alt="icon"></div>
+			<ul class="overlay__firstList">
+				<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Главная</a><hr class="overlay__firstLevel__hr"></li>
+				<li class="overlay__firstLevel ">
+					<p class="overlay__firstLevel__link">Услуги</p>
+					<hr class="overlay__firstLevel__hr">
+					<ul class="overlay__secondList animate__animated">
+						<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Чистка зубов</a></li>
+						<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Удаление</a></li>
+						<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Хирургия</a></li>
+						<li class="secondLevel "><a class="overlay__secondLevel__link"href="#">Ортодантия</a></li>
+					</ul>
+				</li>
+				<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="aboutUsCopy.html">О нас</a><hr class="overlay__firstLevel__hr"></li>
+				<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Контакты</a><hr class="overlay__firstLevel__hr"></li>
+				<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="equipment.html">Оборудование</a><hr class="overlay__firstLevel__hr"></li>
+				<li class="overlay__firstLevel "><a class="overlay__firstLevel__link" href="#">Специалисты</a><hr class="overlay__firstLevel__hr"></li>
+			</ul>
+		</div>
 	</div>
+
 </div>
 		<h1 class="title title__h1 title__fang">БЕЛЫЙ КЛЫК – ПРИЗНАК КРАСИВОЙ СИЛЫ</h1>
 		<div class="slide__fang__shadom__2"></div>
@@ -94,7 +90,7 @@
 			</div>
 		</div>
 		
-			<button class="button button__fang"><div class="button__fon">онас</div></button>
+		<button class="button button__fang button__black"><div class="button__fon">о нас</div></button>
 	</div>
 
 	<div class="section section__advantages">
@@ -107,7 +103,7 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="slider__advantages__slide">
-								<img src="images/dist/advantages__slide__icon.svg" alt="icon">20 ЛЕТ МЕЖДУНАРОДНОГО ОПЫТА
+								<img src="images/dist/advantages__slide__icon.svg" alt="icon">21 ЛЕТ МЕЖДУНАРОДНОГО ОПЫТА
 							</div>
 								
 							<div class="slider__advantages__slide">
@@ -120,7 +116,7 @@
 						</div> 	
 						<div class="swiper-slide">
 							<div class="slider__advantages__slide">
-								<img src="images/dist/advantages__slide__icon.svg" alt="icon">20 ЛЕТ МЕЖДУНАРОДНОГО ОПЫТА
+								<img src="images/dist/advantages__slide__icon.svg" alt="icon">22 ЛЕТ МЕЖДУНАРОДНОГО ОПЫТА
 							</div>
 								
 							<div class="slider__advantages__slide">
@@ -133,7 +129,7 @@
 						</div> 	
 						<div class="swiper-slide">
 							<div class="slider__advantages__slide">
-								<img src="images/dist/advantages__slide__icon.svg" alt="icon">20 ЛЕТ МЕЖДУНАРОДНОГО ОПЫТА
+								<img src="images/dist/advantages__slide__icon.svg" alt="icon">23 ЛЕТ МЕЖДУНАРОДНОГО ОПЫТА
 							</div>
 								
 							<div class="slider__advantages__slide">
@@ -160,7 +156,7 @@
 					<div class="slide__Aesthetics__title">Эстетика</div>
 					<div class="slide__Aesthetics__desc">Нужно немного, чтобы вызвать улыбку, и достаточно
 						улыбки, чтобы все стало возможным</div>
-						<button class="button button__Aesthetics"><div class="button__fon">перейти</div></button>
+						<button class="button button__Aesthetics button__white"><div class="button__fon button__fon__white">перейти</div></button>
 				</div>
 				<!-- <div  class="tooth">
 					<img id="toothID" src="images/dist/advages__fon.png" alt="tooth" class="tooth__img">
@@ -195,7 +191,128 @@
 	</div>
 	<div class="section section__doctors">
 		<div class="container">
-			<div  class="swiper slider__doctors" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+			<div class="doctor-image__wrap">
+				<img src="images/dist/slide__doctors__1.png" alt="icon">
+				<div class="doctor-image__text">
+					<h1>Мушеев</h1>
+					<h2>Илья Юльевич</h2>
+					<p>Главный врач</p>
+				</div>
+			</div>	
+			<div class="doctor-cols">
+				<div class="wrapper">
+					<div class="doctor-cols-carousel doctor-cols-swiper swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<div class="doctor-cols-carousel__row">
+									<div class="doctor-cols-carousel__col">
+										<a href="doctor.html" class="doctor-cols-carousel__image">
+											<img src="images/dist/slide__doctors__1.png" alt="icon">
+											<div class="doctor-cols-carousel__text">
+												<p>Иванов Иван Иванович</p>
+												<small>Главный врач</small>
+											</div>
+										</a>
+									</div>
+									<div class="doctor-cols-carousel__col">
+										<a href="doctor.html" class="doctor-cols-carousel__image">
+											<img src="images/dist/slide__doctors__3.png" alt="icon">
+											<div class="doctor-cols-carousel__text doctor-cols-carousel__text_black">
+												<p>Иванов Иван Иванович</p>
+												<small>Главный врач</small>
+											</div>
+										</a>
+									</div>
+									<div class="doctor-cols-carousel__col">
+										<a href="doctor.html" class="doctor-cols-carousel__image">
+											<img src="images/dist/slide__doctors__2.png" alt="icon">
+											<div class="doctor-cols-carousel__text">
+												<p>Иванов Иван Иванович</p>
+												<small>Главный врач</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doctor-cols-carousel__row">
+									<div class="doctor-cols-carousel__col">
+										<a href="doctor.html" class="doctor-cols-carousel__image">
+											<img src="images/dist/slide__doctors__1.png" alt="icon">
+											<div class="doctor-cols-carousel__text">
+												<p>Иванов Иван Иванович</p>
+												<small>Главный врач</small>
+											</div>
+										</a>
+									</div>
+									<div class="doctor-cols-carousel__col">
+										<a href="doctor.html" class="doctor-cols-carousel__image">
+											<img src="images/dist/slide__doctors__2.png" alt="icon">
+											<div class="doctor-cols-carousel__text">
+												<p>Иванов Иван Иванович</p>
+												<small>Главный врач</small>
+											</div>
+										</a>
+									</div>
+									<div class="doctor-cols-carousel__col">
+										<a href="doctor.html" class="doctor-cols-carousel__image">
+											<img src="images/dist/slide__doctors__3.png" alt="icon">
+											<div class="doctor-cols-carousel__text doctor-cols-carousel__text_black">
+												<p>Иванов Иван Иванович</p>
+												<small>Главный врач</small>
+											</div>
+										</a>
+									</div>
+	
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="doctor-cols-carousel__row">
+									<div class="doctor-cols-carousel__col">
+										<a href="doctor.html" class="doctor-cols-carousel__image">
+											<img src="images/dist/slide__doctors__3.png" alt="icon">
+											<div class="doctor-cols-carousel__text doctor-cols-carousel__text_black">
+												<p>Иванов Иван Иванович</p>
+												<small>Главный врач</small>
+											</div>
+										</a>
+									</div>
+									<div class="doctor-cols-carousel__col">
+										<a href="doctor.html" class="doctor-cols-carousel__image">
+											<img src="images/dist/slide__doctors__2.png" alt="icon">
+											<div class="doctor-cols-carousel__text">
+												<p>Иванов Иван Иванович</p>
+												<small>Главный врач</small>
+											</div>
+										</a>
+									</div>
+									<div class="doctor-cols-carousel__col">
+										<a href="doctor.html" class="doctor-cols-carousel__image">
+											<img src="images/dist/slide__doctors__1.png" alt="icon">
+											<div class="doctor-cols-carousel__text">
+												<p>Иванов Иван Иванович</p>
+												<small>Главный врач</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+	
+	
+						</div>
+						
+	
+						<div class="doctor-cols-carousel__controls">
+							<div class="doctor-cols-swiper-pagination"></div>
+							<div class="doctor-cols-swiper-button-prev swiper-button-prev"></div>
+							<div class="doctor-cols-swiper-button-next swiper-button-next"></div>
+						</div>
+				</div>
+				</div>
+			</div>
+			<!-- <div  class="swiper slider__doctors" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<div class="slider__doctors__desc">
@@ -266,7 +383,7 @@
 					</div>
 					
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<div class="section section__equipment equipment__bg" style="background-image: url(images/dist/main__slide__5.png);">
@@ -274,7 +391,7 @@
 			<h2 class="title__h2 equipment__h2">Оснащение</h2>
 			<p class="equipment__text">Медицинские инновации и проверенные годами
 				технологии для красивой силы вашей улыбки!</p>
-			<button class="button button__equipment"><div class="button__fon">перейти</div></button>
+			<button onclick="document.location='equipment.html'" class="button button__equipment button__white"><div class="button__fon button__fon__white">перейти</div></button>
 		</div>
 	</div>
 	<div class="section section__rooms">
@@ -285,7 +402,7 @@
 					<div class="rooms__desc">Здесь начинается красивая
 						сила вашей улыбки.</div>
 				</div>
-				<div class="swiper-slide slider__rooms__slide" style="background-image: url(images/dist/main__slide__6.png);">
+				<div class="swiper-slide slider__rooms__slide" style="background-image: url(images/dist/main__slide__5.jpg);">
 					<div class="rooms__addres">пречистенка, 27</div>
 					<div class="rooms__desc">Здесь начинается красивая
 						сила вашей улыбки.</div>
@@ -295,7 +412,7 @@
 					<div class="rooms__desc">Здесь начинается красивая
 						сила вашей улыбки.</div>
 				</div>
-				<div class="swiper-slide slider__rooms__slide" style="background-image: url(images/dist/main__slide__6.png);">
+				<div class="swiper-slide slider__rooms__slide" style="background-image: url(images/dist/main__slide__7.jpg);">
 					<div class="rooms__addres">пречистенка, 27</div>
 					<div class="rooms__desc">Здесь начинается красивая
 						сила вашей улыбки.</div>
@@ -305,40 +422,44 @@
 		</div>
 	</div>
 	<div class="section section__twentytwenty">
-		<p class="twentytwenty__title" >— примеры работ</p>
-		<h2 class="title__h2 twentytwenty__h2" >Результаты «до» и «после»</h2>
-		<div id="container1" class="twentytwenty-container">
-			<!-- The before image is first -->
-			<img src="images/dist/after.jpg" />
-			<!-- The after image is last -->
-			<img src="images/dist/twentytwenty__2.png" />
+		<div class="container">
+			<p class="twentytwenty__title" >— примеры работ</p>
+			<h2 class="title__h2 twentytwenty__h2" >Результаты «до» и «после»</h2>
+			<div id="container1" class="twentytwenty-container">
+				<!-- The before image is first -->
+				<img src="images/dist/after.jpg" />
+				<!-- The after image is last -->
+				<img src="images/dist/twentytwenty__2.png" />
+			</div>
+			<div class="twentytwenty__desc">Duis hac urna sagittis, vitae rutrum sollicitudin. Dolor ut
+				adipiscing scelerisque duis tellus integer.
+			</div>
+			<button class="button twentytwenty__button button__black"><div class="button__fon">Все наши работы</div></button>
 		</div>
-		<div class="twentytwenty__desc">Duis hac urna sagittis, vitae rutrum sollicitudin. Dolor ut
-			adipiscing scelerisque duis tellus integer.
-		</div>
-		<button class="button twentytwenty__button"><div class="button__fon">Все наши работы</div></button>
 	</div>
 	<div class="section section__cards" style="background-image: url(images/dist/main__slide__7.png);">
 		<div class="cards__wrapper">
-			<div class="wrapper">
+			<div class="card__wrapp">
 				<div class="card">
 					<div class="front"><img src="images/dist/face-silver.png"></div>
 					<div class="back"><img src="images/dist/back-silver.png"></div>
 				</div>
 			</div>
 		</div>
-		<button class="button__cards">Узнать секрет своей силы</button>
+		<button class="button button__cards button__white"><div class="button__fon button__fon__white">Узнать секрет своей силы</div></button>
 	</div>
 	<div class="section section__news">
 		<div class="container">
+			
 			<div class="news">
 				<div class="news___buttons">
 					<div class="news__h2 title__h2">Новости</div>
-					<a href="" class="news__link gold">Все новости</a>
+					<a href="newsStart.html" class="news__link gold">Все новости</a>
 				</div>
-				<div class="news__cards">
-					<a class="news__crad__big">
-						<img class="news__card__img--big" src="images/dist/news__card__big.png" alt="icon">
+				<div class="newsGridCard">
+					<a href="news.html" class="news__cardGrid__big">
+						
+						<img class="news__cardGrid__big--img" src="images/dist/news__card__big.png" alt="icon">
 						<div class="card__big__decs">
 							<div class="crad__big__row">
 								<div class="card__big__date">17.05.2022</div>
@@ -347,34 +468,34 @@
 								<div class="card__big__title">Это название этого блока новостей</div>
 							</div>
 						</div>
+						
 					</a>
-					<div class="news__card__litle">
-						<a class="news__card news__card__1">
-							<img class="news__card__img" src="images/dist/news__card_1.png" alt="icon">
-							<div class="news__card__desc">
-								<div class="news__card__title">Adipiscing lobrt
-									senectus telus sit.</div>
-								<div class="news__card__text">
-									<div class="news__card__date">17.05.2022</div>
-									<div class="news__card__button"><img src="images/dist/news__button.svg" alt=""></div>
-								</div>
+					<a href="news.html" class="news__cardGrid__1">
+						<img class="" src="images/dist/news__card_1.png" alt="icon">
+						<div class="news__card__desc">
+							<div class="news__card__title">Adipiscing lobrt
+								senectus telus sit.</div>
+							<div class="news__card__text">
+								<div class="news__card__date">17.05.2022</div>
+								<div class="news__card__button"><img src="images/dist/news__button.svg" alt=""></div>
 							</div>
-						</a>
-						<a class="news__card news__card__2">
-							<img class="news__card__img" src="images/dist/news__card_2.png" alt="icon">
-							<div class="news__card__desc">
-								<div class="news__card__title">Adipiscing lobrt
-									senectus telus sit.</div>
-								<div class="news__card__text">
-									<div class="news__card__date">17.05.2022</div>
-									<div class="news__card__button"><img src="images/dist/news__button.svg" alt=""></div>
-								</div>
+						</div>
+					</a>
+					<a href="news.html" class="news__cardGrid__2">
+						<img class="" src="images/dist/news__card_2.png" alt="icon">
+						<div class="news__card__desc">
+							<div class="news__card__title">Adipiscing lobrt
+								senectus telus sit.</div>
+							<div class="news__card__text">
+								<div class="news__card__date">17.05.2022</div>
+								<div class="news__card__button"><img src="images/dist/news__button.svg" alt="icon"></div>
 							</div>
-						</a>
-					</div>
-
+						</div>
+					</a>
+	
 				</div>
 			</div>
+
 			<div class="news__form">
 				<div class="news__form__callMe">
 					<div class="form__callMe__left">
@@ -382,8 +503,8 @@
 						<a class="form__callMe__tel gold" href="tel:++7495208-27-27">+7 (495) 208-27-27</a>
 					</div>
 					<div class="form__callMe__right">
-						<button class="button button__callMe"><div class="button__fon">ПОзвонить</div></button>
-						<button class="button button__callMe button__WS" ><div class="button__fon"><span></span>написать</div></button>
+						<button class="button button__callMe button__black"><div class="button__fon">ПОзвонить</div></button>
+						<button class="button button__callMe button__black button__WS" ><div class="button__fon"><span></span>написать</div></button>
 					</div>
 				</div>
 				<div class="news__esle">
@@ -407,13 +528,32 @@
 								<div class="validate-input-at" data-validate="Обязательное поле">
 									<input class="input-writeMe" type="text" name="email-at" placeholder="Номер телефона" />
 									<span class="focus-input-at"></span>
-									<button id="submit-at" class="button form-at-btn"><div class="button__fon"><span></span></div></button>
+									<button id="submit-at" data-fancybox="dialog" data-src="#dialog-content" class="button form-at-btn popup2_open">
+										<div class="button__fon"><span></span></div>
+									</button>
+									<!-- Dialog Contents -->
+<div id="dialog-content" style="display:none;max-width:500px;">
+  <h2>Hello, world!</h2>
+  <p>
+    <input type="text" value="" />
+  </p>
+  <p>
+    Try hitting the tab key and notice how the focus stays within the dialog itself.
+  </p>
+  <p>
+    To close dialog hit the esc button, click on the overlay or just click the close button.
+  </p>
+  <p className="margin-bottom--none">
+    Element used to launch the modal would receive focus back after closing.
+  </p>
+</div>
+									
 								</div>
 							</div>
-							<div class="result-at"></div>
 						</div>
 					</div>
 				</div>
+			
 			</div>
 
 		</div>
@@ -430,12 +570,12 @@
 			<div class="bubble x10"><img src="images/dist/bubble.png" alt=""></div>
 		</div>
 	</div>
-	<div class="section__map">
-		<div id="myWindow">
+	<div class="section__map" style="background-image: url(images/dist/map.svg);">
+		<!-- <div id="myWindow">
 			<div id="myContent">
 				<img id="myImage" src="images/dist/map.svg" alt="image"/>
 			</div>
-		</div>
+		</div> -->
 	</div>
 
 
@@ -457,8 +597,9 @@
 				<a href="#" class="footer__link gold">Контакты</a>
 			</nav>
 			<div class="footer__pact">
-				<a href="#" class="footer__link gold">Политика конфиденциальности</a>
-				<a href="#" class="footer__link gold">Оферта</a>
+				<a href="#" class="footer__link footer__link__mob gold">Оферта</a>
+				<a href="information.html" class="footer__link gold">Политика конфиденциальности</a>
+				<a href="#" class="footer__link footer__link__desc gold">Оферта</a>
 				<a href="#" class="footer__link gold">Пользователькое соглашение</a>
 
 			</div>

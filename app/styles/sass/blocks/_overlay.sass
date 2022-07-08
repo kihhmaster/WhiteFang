@@ -1,19 +1,28 @@
-.overlay
+.overlay__wrapp
 	position: absolute
 	right: 0
 	top: 0
 	width: 100%
 	height: 100vh
 	display: none
-	z-index: 1000
+	background: #00000077
+	justify-content: flex-end
+	align-items: flex-start
+.overlay
+	position: absolute
+	top: 0
+	right: 0
+	display: flex
+	width: 100%
 	flex-flow: column nowrap
 	justify-content: flex-start
 	align-items: flex-start
 	max-width: 312px
-	background: linear-gradient(191.68deg, #FFFFFF 39%, rgba(255, 255, 255, 0) 87.31%)
+	height: 100vh
+	background: linear-gradient(191.68deg, #FFFFFF 40%, rgba(255, 255, 255, 0) 87.31%)
 	padding-top: 40px
-
 	padding-right: 30px
+	z-index: 50
 .overlay__title
 	position: relative
 	width: 100%
@@ -29,6 +38,8 @@
 	right: 53px
 	top: 45px
 	cursor: pointer
+	&:hover
+		filter: grayscale(100%)
 .topMenu__saffary
 	position: relative
 	width: 100%
@@ -81,7 +92,7 @@
 .secondLevel
 	position: relative
 	width: 95%
-	height: 40px
+	height: 50px
 	padding-left: 36px
 	background: #fff
 	display: flex
@@ -94,7 +105,55 @@
 .overlay__firstLevel
 	border-bottom: 2px solid #d9cb7e00
 	transition: all .7s
-	&:hover
+	.overlay__firstLevel__hr
+		opacity: 0
+		width: 100%
+		border-top: 0px
+		border-left: 0px
+		border-right: 0px
 		border-bottom: 2px solid #D9CB7E
+	&:hover
+		.overlay__firstLevel__hr
+			opacity: 1
+
+.overlay__firstLevel 
+	display: flex
+	flex-flow: column
+	justify-content: flex-start
+	align-items: flex-start
+
+//`@media (max-width: 1400px) { ...}
+@media (max-width: 1400px)
 
 
+//`@media (max-width:  1200px) { ...}
+@media (max-width: 1200px)
+
+//`@media (max-width: 992px) { ...}
+@media (max-width: 992px)
+
+//`@media (max-width: 768px) { ...}
+@media (max-width: 768px)
+
+//`@media (max-width: 576px) { ...}
+@media (max-width: 576px)
+	.overlay
+		max-width: 180px
+		padding-top: 20px
+		padding-right: 15px
+	.overlay__firstLevel 
+		padding-left: 15px
+		height: 40px
+	.overlay__title
+		padding-left: 15px
+		font-size: 22px
+	.overlay__secondList
+		right: 160px
+		max-width: 140px
+	.overlay__clase
+		top: 23px
+		right: 15px
+	.secondLevel 
+		padding-left: 10px
+		height: 35px
+		font-size: 14px

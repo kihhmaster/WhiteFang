@@ -7,21 +7,274 @@
 	height: 90vh;
 	min-height: 800px;
 }
-.slider__animals .swiper-slide {
-	position: relative;
-	height: 100%;
-	display:flex;
-	align-items: flex-end;
-	justify-content: center;
-	transition: all 1.4s ease-in-out;
-	transform: scale(1) translateY(70px);
-	filter: grayscale(100%);
-	opacity: 0.3;
-	&.swiper-slide-active{
-		transform: scale(1.3) translateY(-90px);
-		filter: grayscale(0%);
-		opacity: 1;
+	.slider__animals .swiper-slide {
+		position: relative;
+		height: 100%;
+		display:flex;
+		align-items: flex-end;
+		justify-content: center;
+		transition: all 7s ease-in-out;
+		transform: scale(0.4) translateY(500px);
+		filter: opacity(100%) grayscale(100%);
+		&.swiper-slide-active{
+			transform: scale(1.35) translateY(-105px);
+			filter: opacity(100%) grayscale(0%);
+			z-index: 10;
+	
+		}
+		&.swiper-slide-duplicate-active {
+			transform: scale(1.35) translateY(-105px);
+			filter: opacity(100%) grayscale(0%);
+			z-index: 10;
+	
+	
+		}
+	
+		&.swiper-slide-prev{
+			transform: scale(1) translateY(50px);
+			filter: opacity(45%) grayscale(100%);
+			z-index: 2;
+	
+		}
+		&.swiper-slide-duplicate-prev {
+			transform: scale(1) translateY(50px);
+			filter: opacity(45%) grayscale(100%);
+			z-index: 2;
+	
+		}
+	
+		&.swiper-slide-next{
+			transform: scale(1) translateY(50px);
+			filter: opacity(45%) grayscale(100%);
+			z-index: 2;
+		}
+	
+		&.swiper-slide-duplicate-next{
+			transform: scale(1) translateY(50px);
+			filter: opacity(45%) grayscale(100%);
+			z-index: 2;
+		}
 	}
+
+// .slider__animals .swiper-slide {
+// 	position: relative;
+// 	height: 100%;
+// 	display:flex;
+// 	align-items: flex-end;
+// 	justify-content: center;
+// 	transition: all 5s ease-in-out;
+// 	transform: scale(0.4) translateY(500px);
+// 	filter:  grayscale(100%);
+// 	&.swiper-slide-duplicate {
+// 		filter:  grayscale(100%);
+// 		transform: scale(0.4) translateY(500px);
+// 	}
+// 	&.swiper-slide-duplicate-active {
+// 		filter:  grayscale(0%);
+// 	}
+// 	&.swiper-slide-active{
+// 		filter:  grayscale(0%);
+// 		transform: scale(1.30) translateY(-100px);
+// 	}
+	
+// 	&.swiper-slide-duplicate-prev {
+// 		filter:  grayscale(100%) opacity(45%);
+// 		transform: scale(0.8) translateY(105px);
+
+// 	}
+// 	&.swiper-slide-duplicate-next{
+// 		filter:  grayscale(100%) opacity(45%);
+// 		transform: scale(0.8) translateY(105px);
+// 	}
+
+// 	&.swiper-slide-prev{
+// 		filter:  grayscale(100%) opacity(45%);
+// 		transform: scale(0.8) translateY(105px);
+
+// 	}
+// 	&.swiper-slide-next{
+// 		filter:  grayscale(100%) opacity(45%);
+// 		transform: scale(0.8) translateY(105px);
+// 	}
+
+
+// }
+// @keyframes animalsAnimation {
+//   0% {
+// 		filter: opacity(100%) grayscale(0%);
+//   }
+// 	100%{
+// 		filter: opacity(35%) grayscale(100%);
+// 	}
+
+// }
+// @keyframes animalsAnimationPrev {
+//   0% {
+// 		filter: opacity(35%) grayscale(100%);
+//   }
+// 	50%{
+// 		filter: opacity(45%) grayscale(100%);
+// 	}
+// 	100%{
+// 		filter: opacity(65%) grayscale(100%);
+// 	}
+
+// }
+
+// @keyframes animalsAnimationActive {
+//   0% {
+// 		filter: opacity(0%) grayscale(100%);
+//   }
+// 	100%{
+// 		filter: opacity(100%) grayscale(0%);
+// 	}
+
+// }
+@media (max-width: 1400px) {
+	.section__animals {
+		max-height: 700px;
+	}
+}
+@media (max-width: 1300px) {
+	.title__fang {
+		margin-top: 200px;
+	}
+}
+//`@media (max-width:  1200px) { ...}
+@media (max-width: 1200px) {
+	.title__fang {
+		font-size: 48px;
+		margin-top: 200px;
+	}
+	// .slider__animals .swiper-slide {
+	// 	&.swiper-slide-active{
+	// 		transform: scale(1.4) translateY(-105px);
+	// 		filter: opacity(100%) grayscale(0%);
+	// 		z-index: 10;
+	
+	// 	}
+	// 	&.swiper-slide-duplicate-active {
+	// 		transform: scale(1.4) translateY(-105px);
+	// 		filter: opacity(100%) grayscale(0%);
+	// 		z-index: 10;
+	
+	
+	// 	}
+	
+	// 	&.swiper-slide-prev{
+	// 		transform: scale(0.8) translateY(130px);
+	// 		filter: opacity(45%) grayscale(100%);
+	// 		z-index: 2;
+	
+	// 	}
+	// 	&.swiper-slide-duplicate-prev {
+	// 		transform: scale(0.8) translateY(130px);
+	// 		filter: opacity(45%) grayscale(100%);
+	// 		z-index: 2;
+	
+	// 	}
+	
+	// 	&.swiper-slide-next{
+	// 		transform: scale(1.1) translateY(-30px);
+	// 		filter: opacity(45%) grayscale(100%);
+	// 		z-index: 2;
+	// 	}
+	
+	// 	&.swiper-slide-duplicate-next{
+	// 		transform: scale(1.1) translateY(-30px);
+	// 		filter: opacity(45%) grayscale(100%);
+	// 		z-index: 2;
+	// 	}
+	// }
+}
+
+//`@media (max-width: 992px) { ...}
+@media (max-width: 992px){
+	.title__fang {
+		font-size: 40px;
+		margin-top: 160px;
+	}
+	.button__fang {
+		margin-top: 200px;
+	}
+	.section__animals {
+		max-height: 600px;
+	}
+}
+//`@media (max-width: 768px) { ...}
+@media (max-width: 768px){
+	.title__fang {
+		font-size: 36px;
+		margin-top: 100px;
+		line-height: 1.2;
+	}
+	.section__animals {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.button__fang {
+		margin-top: 40px;
+	}
+	.contacts {
+		display: none !important; 
+	}
+	.contacts__fon {
+		display: none !important;
+	}
+	.section__animals {
+		max-height: 600px;
+	}
+}
+//`@media (max-width: 576px) { ...}
+@media (max-width: 576px) {
+	.title__fang {
+		font-size: 32px;
+		line-height: 1.2;
+	}
+	// .slider__animals .swiper-slide {
+	// 	// transition: all 3s ease-in-out;
+	// 	// transform: scale(0.8) translateY(70px);
+	// 	filter: opacity(0%) grayscale(100%);
+	// 	&.swiper-slide-duplicate {
+	// 		// transition: all 2s ease-in-out;
+	// 		// transform: scale(0.8) translateY(70px);
+	// 		filter: opacity(0%) grayscale(100%);
+	// 	}
+	// 	&.swiper-slide-active{
+	// 		transform: scale(1.8) translateY(-175px);
+	// 		filter: opacity(100%) grayscale(0%);
+	
+	// 	}
+	// 	&.swiper-slide-duplicate-active {
+	// 		transform: scale(1.8) translateY(-175px);
+	// 		filter: opacity(100%) grayscale(0%);
+	
+	
+	// 	}
+	
+	// 	&.swiper-slide-prev{
+	// 		transform: scale(1.1) translateY(-30px);
+	// 		filter: opacity(45%) grayscale(100%);
+	
+	// 	}
+	// 	&.swiper-slide-duplicate-prev {
+	// 		transform: scale(1.1) translateY(-30px);
+	// 		filter: opacity(45%) grayscale(100%);
+	
+	// 	}
+	
+	// 	&.swiper-slide-next{
+	// 		transform: scale(1.2) translateY(-60px);
+	// 		filter: opacity(45%) grayscale(100%);
+	
+	// 	}
+	
+	// 	&.swiper-slide-duplicate-next{
+	// 		transform: scale(1.2) translateY(-60px);
+	// 		filter: opacity(45%) grayscale(100%);
+	
+	// 	}
+	// }
 }
 
 .slider__animals__img{
